@@ -13,6 +13,8 @@ If you are reporting a bug, please include:
 * Any details about your local setup that might be helpful in troubleshooting.
 * Detailed steps to reproduce the bug.
 
+You can report bugs at https://github.com/UBC-MDS/ImgHelp/issues
+
 ### Fix Bugs
 
 Look through the GitHub issues for bugs. Anything tagged with "bug" and "help
@@ -31,6 +33,8 @@ on the web in blog posts, articles, and such.
 
 ### Submit Feedback
 
+You can send feedback through filing an issue at https://github.com/UBC-MDS/ImgHelp/issues
+
 If you are proposing a feature:
 
 * Explain in detail how it would work.
@@ -42,7 +46,7 @@ If you are proposing a feature:
 
 Ready to contribute? Here's how to set up `ImgHelp` for local development.
 
-1. Download a copy of `ImgHelp` locally.
+1. Download a copy of `ImgHelp` or fork and clone this repo to your local machine.
 2. Install `ImgHelp` using `poetry`:
 
     ```console
