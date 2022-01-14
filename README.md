@@ -47,10 +47,10 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 ## Contributors
 
 The following people contributed to the creation of ImgHelp:
-- Sufang Tan @Kendy-Tan
-- Jasmine Ortega @JasmineOrtega
-- Ho Kwan Lio @stevenlio88
-- Maeve Shi @MaeveShi
+- Sufang Tan [@Kendy-Tan](https://github.com/Kendy-Tan)
+- Jasmine Ortega [@JasmineOrtega](https://github.com/jasmineortega)
+- Ho Kwan Lio [@stevenlio88](https://github.com/stevenlio88)
+- Maeve Shi [@MaeveShi](https://github.com/MaeveShi)
 
 ## License
 
