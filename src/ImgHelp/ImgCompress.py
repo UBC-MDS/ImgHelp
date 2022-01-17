@@ -1,15 +1,20 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import plotly.express as px
-from PIL import Image
-import PIL
 
 
 def ImgCompress(img, method, level = 1):
     """
     Image compression using different compression method.
     This function compress image to a user defined compression level.
+    
+    SVD Method:
+        SVD (Singular Value Decomposition) on RGB image. 
+        Note: Actual image memory size is not changed from this function.
+              It does not handle the Jpeg compression algorithm
+    
+    Resize:
+        Resize image to different size using interval pixel selection method.
     
     Parameters
     ----------
@@ -27,7 +32,13 @@ def ImgCompress(img, method, level = 1):
         
     Examples
     --------
-    >>> ImgCompress(img, method='resize', level=1)
+    >>> import numpy as np
+    >>> import matplotlib.pyplot as plt
+    >>> from ImgHelp.ImgCompress import ImgCompress
+    >>> image = plt.imread('../test_img/ubc.jpeg')
+    >>> plt.imshow(image) #show the image
+    >>> img_comp = ImgCompress(image, method='resize', level=1)
+    >>> plt.imshow(img_comp) #show the compressed (resized) image
     """
     #Function input checks:
     assert type(img) == np.ndarray, "Invalid image type, expecting numpy.ndarray."
