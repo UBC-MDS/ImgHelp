@@ -1,7 +1,5 @@
 import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
-
 
 def ImgCompress(img, method, level = 1):
     """
@@ -32,7 +30,6 @@ def ImgCompress(img, method, level = 1):
         
     Examples
     --------
-    >>> import numpy as np
     >>> import matplotlib.pyplot as plt
     >>> from ImgHelp.ImgCompress import ImgCompress
     >>> image = plt.imread('../test_img/ubc.jpeg')
@@ -42,7 +39,7 @@ def ImgCompress(img, method, level = 1):
     """
     #Function input checks:
     assert type(img) == np.ndarray, "Invalid image type, expecting numpy.ndarray."
-    assert np.min(image.shape[:2]) == 0, "Invalid image size."
+    assert np.min(img.shape[:2]) > 0 and len(img.shape) == 3 , "Input image has invalid dimension. Expecting a 3d array (RGB)."
     assert level in (1,2,3), "Invalid level, expecting 1, 2, 3"
     assert method.lower() in ('svd','resize'), "Invalid method, expecting 'SVD' or 'Resize'."
     
