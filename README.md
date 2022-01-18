@@ -1,6 +1,6 @@
 # ImgHelp
 
-ImgHelp is a simple Python package to help users crop, rotate, compress, or change the color scale of a given image. It contains four functions: `ImgCrop()`, `ImgRotate()`, `ImgColorConversion()` and `ImgCompress()` and is designed to be a beginner-friendly image processing tool. 
+ImgHelp is a simple Python package to help users crop, rotate, compress, or change the color scale of a given image. It contains four functions: `Crop()`, `ImgRotate()`, `ColorConv()` and `ImgCompress()` and is designed to be a beginner-friendly image processing tool. 
 
 
 ## Installation
