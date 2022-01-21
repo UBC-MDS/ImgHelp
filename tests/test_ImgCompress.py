@@ -1,4 +1,4 @@
-from ImgHelp.ImgCompress import ImgCompress
+from imghelp.ImgCompress import ImgCompress
 import matplotlib.pyplot as plt
 
 def test_ImgCompress():

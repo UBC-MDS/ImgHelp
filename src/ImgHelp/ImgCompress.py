@@ -31,7 +31,7 @@ def ImgCompress(img, method, level = 1):
     Examples
     --------
     >>> import matplotlib.pyplot as plt
-    >>> from ImgHelp.ImgCompress import ImgCompress
+    >>> from imghelp.ImgCompress import ImgCompress
     >>> image = plt.imread('../test_img/ubc.jpeg')
     >>> plt.imshow(image) #show the image
     >>> img_comp = ImgCompress(image, method='resize', level=1)
