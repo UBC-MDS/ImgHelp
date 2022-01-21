@@ -1,4 +1,4 @@
-from ImgHelp.ColorConv import ColorConv
+from imghelp.ColorConv import ColorConv
 from numpy import random
 
 
