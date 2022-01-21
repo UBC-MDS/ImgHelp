@@ -14,7 +14,11 @@ def ColorConv(img, color):
         The converted image as 3D np.array.
     Examples
     --------
-    >>> ColorConv(img, 'gray')
+    >>> import matplotlib.pyplot as plt
+    >>> from imghelp.ImgColorConv import ColorConv
+    >>> image = plt.imread('../test_img/ubc.jpeg')
+    >>> plt.imshow(image) #show the image
+    >>> ColorConv(image, 'gray')
     """
     assert isinstance(color, str), "Invalid image type, expecting numpy.ndarray."
     assert len(img.shape()) == 3, "Invalid image type, expecting numpy.3d array."
