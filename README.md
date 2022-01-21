@@ -13,10 +13,10 @@ $ pip install git+git://github.com/UBC-MDS/ImgHelp.git
 
 ```python
 # import functions from ImgHelp 
-from ImgHelp.Crop import Crop
-from ImgHelp.ImgRotate import ImgRotate
-from ImgHelp.ColorConv import ColorConv
-from ImgHelp.ImgCompress import ImgCompress
+from imghelp.Crop import Crop
+from imghelp.ImgRotate import ImgRotate
+from imghelp.ColorConv import ColorConv
+from imghelp.ImgCompress import ImgCompress
 ```
 
 
