@@ -25,17 +25,19 @@ def ColorConv(img, color):
     if color = 'gray':
         conv_img = np.mean(img, axis=2)
         return conv_img
+    
     elif color = 'rad':
         conv_img = img.copy()
         conv_img[:,:1] = np.zeros(ubc.shape[2:])
         conv_img[:,:2] = np.zeros(ubc.shape[2:])
         return conv_img
+    
     elif color = 'green':
         conv_img = img.copy()
         conv_img[:,:0] = np.zeros(ubc.shape[2:])
         conv_img[:,:2] = np.zeros(ubc.shape[2:])
         return conv_img
-        return conv_img
+
     elif color = 'blue':
         conv_img = img.copy()
         conv_img[:,:0] = np.zeros(ubc.shape[2:])
