@@ -5,3 +5,8 @@
 ## v0.1.0 (10/01/2022)
 
 - First release of `ImgHelp`!
+
+## v0.2.0 (20/01/2022)
+
+- Second release of `ImgHelp`
+  - Package function are created along with test_* script in tests/
