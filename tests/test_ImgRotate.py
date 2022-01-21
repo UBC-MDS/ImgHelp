@@ -1,4 +1,4 @@
-from ImgHelp.Rotate import Rotate
+from imghelp.Rotate import Rotate
 import random
 import pytest
 
