@@ -25,7 +25,11 @@ def ImgRotate(img, degree):
     
     Examples
     --------
-    ImgRotate(cat_png, 270)
+     >>> import matplotlib.pyplot as plt
+    >>> from imghelp.ImgCompress import ImgCompress
+    >>> image = plt.imread('../test_img/ubc.jpeg')
+    >>> plt.imshow(image) # show the image
+    >>> ImgRotate(image, 270) # rotate image 270 degrees
     
     """
     
