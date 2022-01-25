@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "imghelp"
-version = "0.2.0"
+version = "1.0.0"
 description = "Python package which contains 4 basic image processing functions."
 authors = ["Sufang Tan, Jasmine Ortega, Ho Kwan Lio, Maeve Shi"]
 license = "MIT"
