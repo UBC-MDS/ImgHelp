@@ -1,6 +1,7 @@
-from imghelp.Rotate import Rotate
+from imghelp.ImgRotate import ImgRotate
 import random
 import pytest
+import numpy as np
 
 def test_ImgRotate():
     """

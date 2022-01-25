@@ -21,29 +21,29 @@ def ColorConv(img, color):
     >>> ColorConv(image, 'gray')
     """
     assert isinstance(color, str), "Invalid image type, expecting numpy.ndarray."
-    assert len(img.shape()) == 3, "Invalid image type, expecting numpy.3d array."
+    assert len(img.shape) == 3, "Invalid image type, expecting numpy.3d array."
     assert img.shape[2] == 3, "Invalid image type, expecting a RGB image."
     assert isinstance(color, str), 'Color is not a string!'
-    assert isinstance(img, len(a.shape)), 'Invalid color type!'
+    #assert isinstance(img, np.ndarray), 'Invalid color type!'
 
-    if color = 'gray':
+    if color == 'gray':
         conv_img = np.mean(img, axis=2)
         return conv_img
     
-    elif color = 'rad':
+    elif color == 'red':
         conv_img = img.copy()
-        conv_img[:,:1] = np.zeros(conv_img.shape[2:])
-        conv_img[:,:2] = np.zeros(conv_img.shape[2:])
+        conv_img[:,:,1] = np.zeros(conv_img.shape[:2])
+        conv_img[:,:,2] = np.zeros(conv_img.shape[:2])
         return conv_img
     
-    elif color = 'green':
+    elif color == 'green':
         conv_img = img.copy()
-        conv_img[:,:0] = np.zeros(conv_img.shape[2:])
-        conv_img[:,:2] = np.zeros(conv_img.shape[2:])
+        conv_img[:,:,0] = np.zeros(conv_img.shape[:2])
+        conv_img[:,:,2] = np.zeros(conv_img.shape[:2])
         return conv_img
 
-    elif color = 'blue':
+    elif color == 'blue':
         conv_img = img.copy()
-        conv_img[:,:0] = np.zeros(conv_img.shape[2:])
-        conv_img[:,:1] = np.zeros(conv_img.shape[2:])
+        conv_img[:,:,0] = np.zeros(conv_img.shape[:2])
+        conv_img[:,:,1] = np.zeros(conv_img.shape[:2])
         return conv_img
