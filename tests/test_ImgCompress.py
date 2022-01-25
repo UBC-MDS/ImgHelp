@@ -1,5 +1,6 @@
 from imghelp.ImgCompress import ImgCompress
 import matplotlib.pyplot as plt
+import numpy as np
 
 def test_ImgCompress():
     """Test ImgHelp behave as expected"""
