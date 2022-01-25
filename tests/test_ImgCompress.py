@@ -1,4 +1,4 @@
-from imghelp.ImgCompress import ImgCompress
+from imghelp.imgcompress import ImgCompress
 import matplotlib.pyplot as plt
 import numpy as np
 
