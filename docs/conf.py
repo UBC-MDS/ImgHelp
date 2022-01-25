@@ -6,7 +6,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u"ImgHelp"
+project = u"imghelp"
 copyright = u"2022, Sufang Tan, Jasmine Ortega, Ho Kwan Lio, Maeve Shi"
 author = u"Sufang Tan, Jasmine Ortega, Ho Kwan Lio, Maeve Shi"
 
