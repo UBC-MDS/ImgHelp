@@ -9,7 +9,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=.
 set BUILDDIR=_build
-set SPHINXPROJ=ImgHelp
+set SPHINXPROJ=imghelp
 
 if "%1" == "" goto help
 

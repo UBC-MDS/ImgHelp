@@ -1,22 +1,22 @@
-# ImgHelp
+# imghelp
 
-ImgHelp is a simple Python package to help users crop, rotate, compress, or change the color scale of a given image. It contains four functions: `Crop()`, `ImgRotate()`, `ColorConv()` and `ImgCompress()` and is designed to be a beginner-friendly image processing tool. 
+imghelp is a simple Python package to help users crop, rotate, compress, or change the color scale of a given image. It contains four functions: `Crop()`, `ImgRotate()`, `ColorConv()` and `ImgCompress()` and is designed to be a beginner-friendly image processing tool. 
 
 
 ## Installation
 
 ```bash
-$ pip install ImgHelp
+$ pip install git+git://github.com/UBC-MDS/imghelp.git
 ```
 
 ## Usage
 
 ```python
-# import functions from ImgHelp 
-from ImgHelp.Crop import Crop
-from ImgHelp.ImgRotate import ImgRotate
-from ImgHelp.ColorConv import ColorConv
-from ImgHelp.ImgCompress import ImgCompress
+# import functions from imghelp 
+from imghelp.Crop import Crop
+from imghelp.ImgRotate import ImgRotate
+from imghelp.ColorConv import ColorConv
+from imghelp.ImgCompress import ImgCompress
 ```
 
 
@@ -37,7 +37,7 @@ There are many image processing libraries already present in the Python ecosyste
 - Pillow: Open source library forked from the now defunct Python Imaging Library (PIL). In addition to extensive functions that can merge, enhance, and transform images, Pillow is unique in that it supports many image file formats.
 - Numpy: Python package oriented around extensive mathematical functions, as well as vectorizing matrices and arrays. Images can be read into a `ndarray`, which forms the basis for most image processing libraries, including the aforementioned OpenCV. 
 
-The aim for ImgHelp is not to replace the above packages. OpenCV, Pillow are packages geared towards pre-processing images for more complex tasks down the line, such as data analysis or machine learning, and can often have a steep learning curve. The intention for ImgHelp is to be a beginner-friendly Python library for basic image manipulation. A simple tool to use when all you need to do is rotate, crop, compress, or convert the colors of an image.   
+The aim for imghelp is not to replace the above packages. OpenCV, Pillow are packages geared towards pre-processing images for more complex tasks down the line, such as data analysis or machine learning, and can often have a steep learning curve. The intention for imghelp is to be a beginner-friendly Python library for basic image manipulation. A simple tool to use when all you need to do is rotate, crop, compress, or convert the colors of an image.   
 
 
 ## Contributing
@@ -46,7 +46,7 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 
 ## Contributors
 
-The following people contributed to the creation of ImgHelp:
+The following people contributed to the creation of imghelp:
 - Sufang Tan [@Kendy-Tan](https://github.com/Kendy-Tan)
 - Jasmine Ortega [@JasmineOrtega](https://github.com/jasmineortega)
 - Ho Kwan Lio [@stevenlio88](https://github.com/stevenlio88)
@@ -54,8 +54,8 @@ The following people contributed to the creation of ImgHelp:
 
 ## License
 
-`ImgHelp` was created by Sufang Tan, Jasmine Ortega, Ho Kwan Lio, Maeve Shi. It is licensed under the terms of the MIT license.
+`imghelp` was created by Sufang Tan, Jasmine Ortega, Ho Kwan Lio, Maeve Shi. It is licensed under the terms of the MIT license.
 
 ## Credits
 
-`ImgHelp` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+`imghelp` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).

@@ -19,7 +19,7 @@ def Crop(image, width, height):
       Examples
       -------
       >>> import matplotlib.pyplot as plt
-      >>> from ImgHelp.Crop import Crop
+      >>> from img.Crop import Crop
       >>> image = plt.imread('../test_img/ubc.jpeg')
       >>> plt.imshow(image) #show the image
       >>> img_crop = Crop(image, 300, 300)
