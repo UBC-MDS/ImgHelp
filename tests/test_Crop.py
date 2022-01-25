@@ -1,4 +1,4 @@
-from imghelp.Crop import Crop
+from imghelp.crop import Crop
 import pytest
 from numpy import random
 

@@ -1,4 +1,4 @@
-from imghelp.ImgRotate import ImgRotate
+from imghelp.imgrotate import ImgRotate
 import random
 import pytest
 import numpy as np
