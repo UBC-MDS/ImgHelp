@@ -28,9 +28,6 @@ jobs:
 
     - name: Install package
       run: poetry install
-
-    - name: Check out package
-      run: pip list
       
     - name: Test with pytest
       run: poetry run pytest tests/ --cov=imghelp --cov-report=xml
