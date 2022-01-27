@@ -3,6 +3,8 @@
 <!-- badges: start -->
 [![codecov](https://codecov.io/gh/UBC-MDS/imghelp/branch/main/graph/badge.svg?token=gpjfx52Pvw)](https://codecov.io/gh/UBC-MDS/imghelp)
 
+[![ci-cd](https://github.com/UBC-MDS/imghelp/actions/workflows/ci-cd.yml/badge.svg?branch=main)](https://github.com/UBC-MDS/imghelp/actions/workflows/ci-cd.yml)
+
 imghelp is a simple Python package to help users crop, rotate, compress, or change the color scale of a given image. It contains four functions: `Crop()`, `ImgRotate()`, `ColorConv()` and `ImgCompress()` and is designed to be a beginner-friendly image processing tool. 
 <!-- badges: end -->
 
