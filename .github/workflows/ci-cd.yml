@@ -64,6 +64,7 @@ jobs:
 
     - name: Use Python Semantic Release to prepare release
       run: |
+          pip install wheel
           pip install python-semantic-release
           git config user.name github-actions
           git config user.email github-actions@github.com
