@@ -56,5 +56,4 @@ def test_ImgCompress():
     img_exp[:,:,0] = pattern_exp
 
     img_comp = ImgCompress(img, 'svd', 2)
-    plt.imshow(img_comp)
     assert np.sum(img_comp-img_exp) == 0, "SVD functionality is not working properly."
