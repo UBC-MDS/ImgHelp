@@ -54,7 +54,7 @@ def ImgCompress(img, method, level = 1):
             U, S, D = np.linalg.svd(img[:,:,i])
             #x = int((h * w * level_scale[level-1]) / (h + w + 1))
             #x = (np.cumsum(S)/np.sum(S) < level_scale[level-1]).sum()
-            x = int(len(S) * max(level_scale[level-1],1))            
+            x = max(int(len(S) * level_scale[level-1]), 2)            
             C = U[:, :x] @ np.diag(S[:x]) @ D[:x, :]
             img_comp[:,:,i] = C.astype("uint8")
         return img_comp
