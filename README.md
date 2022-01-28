@@ -35,6 +35,8 @@ from imghelp.imgcompress import ImgCompress
 
 - `ImgCompress(img, method, level=1)` This function compresses an image to a user-defined compression level. The compression methods supported by this function are single value decomposition (SVD) and simple image resize. Additionally, users can select the compression levels desired (highest compression level = 1,  lowest compression level = 2).
 
+A more in-depth look at the features can be seen at https://imghelp.readthedocs.io/en/latest/
+
 ## Python Ecosystem
 
 There are many image processing libraries already present in the Python ecosystem. A few examples are:
