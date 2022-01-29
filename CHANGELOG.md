@@ -4,6 +4,7 @@
 
 ## v1.0.7 (2022-01-29)
 
+- Update Crop and ImgRotation docstring and functions
 
 ## v1.0.6 (2022-01-28)
 
