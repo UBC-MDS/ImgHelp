@@ -64,12 +64,23 @@ jobs:
 
     - name: Use Python Semantic Release to prepare release
       run: |
-          pip install wheel
-          pip install python-semantic-release
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          semantic-release publish
-          
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git pull origin main
+        poetry run semantic-release version
+        poetry version
+        git commit --amend -m "[skip actions] Bump new version"
+        git push --tag
+
+    - name: Push package version changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.ACCESS_TOKEN }}
+
+    - name: Build package and publish to test PyPI
+      run: |
+        poetry build
+        
     - name: Publish to TestPyPI
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
