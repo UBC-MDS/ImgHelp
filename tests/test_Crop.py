@@ -11,9 +11,9 @@ def test_crop_output():
     This function tests the returned image has the
     expected size and type.
     '''
-    assert Crop(test_img, 20, 20).shape[0:2] == (5, 5)
+    assert Crop(test_img, 20, 20).shape[0:2] == (20, 20)
 
-    assert Crop(test_img, 15, 15).shape[0:2] == (15, 0)
+    assert Crop(test_img, 15, 15).shape[0:2] == (15, 15)
 
     assert len(Crop(test_img, 20, 20).shape) == 3
 
