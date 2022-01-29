@@ -10,9 +10,17 @@ imghelp is a simple Python package to help users crop, rotate, compress, or chan
 
 ## Installation
 
+Install using pip:
+```bash
+$ pip install imghelp
+```
+
+Install using git bash directly from GitHub repo:
 ```bash
 $ pip install git+git://github.com/UBC-MDS/imghelp.git
 ```
+
+Or download directly from [PyPI](https://pypi.org/project/imghelp/).
 
 ## Usage
 
