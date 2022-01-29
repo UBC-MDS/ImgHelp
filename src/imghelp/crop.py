@@ -40,30 +40,29 @@ def Crop(image, width, height):
     else:
         print(f"Converting the original image to the width {width} and height {height}...")
 
-
     #the number of rows and columns to be cropped
-    row = image.shape[0] - height
-    col = image.shape[1] - width
+    new_height = image.shape[0] - height
+    new_width = image.shape[1] - width
  
     #manipulations on rows
-    if row % 2 == 0:
-        top_row = int(row/2)
-        bottom_row = int(image.shape[0] - row)
+    if new_height % 2 == 0:
+        start_row = int(new_height/2) + 1
+        end_row = start_row + height 
     else:
-        top_row = int((row + 1)/2)
-        bottom_row = int(image.shape[0] - top_row + 1)
+        start_row = int((new_height - 1)/2) + 1
+        end_row = start_row + height 
 
     #manipulations on columns
-    if col % 2 == 0:
-        left_col = int(col/2)
-        right_col = int(image.shape[1] - col)
+    if new_width % 2 == 0:
+        start_col = int(new_width/2) + 1
+        end_col = start_col + width 
     else:
-        left_col = int((col + 1)/2)
-        right_col = int(image.shape[1] - col + 1)
+        start_col = int((new_width - 1)/2) + 1
+        end_col = start_col + width 
 
     #crop image by cropping rows and columns using 
     #slicing in numpy
-    new_image = image[top_row:bottom_row, left_col:right_col, :]
+    new_image = image[start_row:end_row, start_col:end_col, :]
     print("Done!")
 
     return new_image
