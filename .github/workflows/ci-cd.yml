@@ -62,7 +62,13 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: Use Python Semantic Release to prepare release
+    - name: Install poetry
+      uses: snok/install-poetry@v1
+
+    - name: Install package
+      run: poetry install
+      
+    - name: Use Python Semantic Release & Git to prepare release
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
